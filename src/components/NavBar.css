@@ -1,0 +1,65 @@
+.navbar {
+  background-color: #123456;
+  padding: 20px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: #abcdef;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.navbar a:hover {
+  color: #ffcc00;
+}
+
+.dropdown {
+  position: relative;
+  color: #abcdef;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.dropdown-menu {
+  display: none; /* Ukryte domyślnie */
+  position: absolute;
+  background-color: #123456;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  top: 100%; /* Rozwijaj poniżej */
+  left: 0;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 200px; /* Zapewnia wygodne klikanie */
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown-menu:hover {
+  display: block; /* Pozwala na wybór pozycji */
+}
+
+.dropdown-menu li {
+  margin: 5px 0; /* Odstępy między elementami */
+}
+
+.dropdown-menu a {
+  color: #abcdef;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 10px;
+  display: block; /* Cały obszar klikalny */
+}
+
+.dropdown-menu a:hover {
+  color: #ffcc00;
+  background-color: rgba(255, 255, 255, 0.1);
+}
